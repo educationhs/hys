@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Class 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="title">English CommunicationⅠ / English Logic and Expression Ⅰ / Presentation Skills α</div>
+        <div class="menu-btn" id="openMenu">☰</div>
+    </header>
+
+    <!-- スライドメニュー -->
+    <div class="overlay" id="overlay"></div>
+    <nav class="drawer" id="drawer">
+        <div class="drawer-header">
+            <span>
+                <h2>Menu</h2>
+            </span>
+            <span id="closeMenu">✕</span>
+        </div>
+        <a href="index.html">Home - ホーム</a>
+        <a href="learning.html">Learning Contents - 学習コンテンツ</a>
+        <a href="https://forms.gle/9ju6mm9daQWKyJeT9">Submit - 提出</a>
+        <a href="https://www.ldoceonline.com/" target="_blank">Dictionary - 辞書</a>
+        <a href="https://forms.gle/i3k58jnmuEgsUPQG9">Contact - 質問・相談</a>
+    </nav>
+
+    <main>
+
+        <div class="card">
+            <div class="buttons">
+                <a href="https://forms.gle/9ju6mm9daQWKyJeT9" class="btn submit icon-btn">
+                    <span class="material-symbols-outlined">upload</span>
+                    <span class="btn-label">Submit - 提出</span>
+                </a>
+                <a href="https://forms.gle/i3k58jnmuEgsUPQG9" class="btn contact icon-btn">
+                    <span class="material-symbols-outlined">live_help</span>
+                    <span class="btn-label">Contact - 質問・相談</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>News</h2>
+            <ul id="news"></ul>
+            <div id="news-empty" class="empty">No News</div>
+        </div>
+
+        <div class="card">
+            <h2>Lesson</h2>
+            <ul id="lectures"></ul>
+            <div id="lecture-empty" class="empty">No Lesson</div>
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
