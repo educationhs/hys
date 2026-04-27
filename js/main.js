@@ -16,7 +16,7 @@ overlay.onclick = closeMenu.onclick;
 let allNews = [];
 let allLectures = [];
 
-fetch("https://script.google.com/macros/s/AKfycbxM4LOum1d8CO5qNVnLuEqn5XGCxU1yIjPqwV-0Fgu0guBp6W2FrLJ6SAuQv1k-bVf07w/exec")
+fetch("https://script.google.com/macros/s/AKfycbzVC_ThCAwGor1a4GQhmaTx_Z_mnJ0XDkCd1tzvp96KY9kmFnOqeWHfxAflVuO-vAvNeA/exec")
     .then(res => res.json())
     .then(data => {
         allNews = data.news;
@@ -36,19 +36,25 @@ function renderNews(count) {
 
         const li = document.createElement("li");
 
+        const link = document.createElement("a");
+        link.href = item.url;
+        link.target = "_blank";
+        link.className = "news-link";
+
         const title = document.createElement("div");
         title.textContent = item.date + " - " + item.title;
 
         const content = document.createElement("div");
         content.textContent = item.content;
 
-        li.appendChild(title);
-        li.appendChild(content);
+        link.appendChild(title);
+        link.appendChild(content);
+
+        li.appendChild(link);
 
         el.appendChild(li);
     });
 }
-
 
 function renderLectures(count) {
     const el = document.getElementById("lectures");
@@ -58,14 +64,21 @@ function renderLectures(count) {
 
         const li = document.createElement("li");
 
+        const link = document.createElement("a");
+        link.href = item.url;
+        link.target = "_blank";
+        link.className = "news-link";
+
         const title = document.createElement("div");
         title.textContent = item.number + "：" + item.title;
 
         const content = document.createElement("div");
         content.textContent = item.content;
 
-        li.appendChild(title);
-        li.appendChild(content);
+        link.appendChild(title);
+        link.appendChild(content);
+
+        li.appendChild(link);
 
         el.appendChild(li);
     });

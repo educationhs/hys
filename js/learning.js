@@ -3,31 +3,37 @@ const contents = [
         title: "Vocabulary",
         desc: "DateBase4800",
         url: "https://www.kirihara-morinogakko.jp/myportal",
-        category: "Vocabulary"
+        category: "Vocabulary",
+    },
+    {
+        title: "Breaking News English",
+        desc: "7段階でレベル分けされた英語でニュースが読めます。",
+        url: "https://breakingnewsenglish.com/",
+        category: "News",
     },
     {
         title: "BBC Learning English",
         desc: "イギリスの公共放送事業体BBCが提供しているサイトです。",
         url: "https://www.bbc.co.uk/learningenglish/",
-        category: "News"
-    },
-    {
-        title: "British Council",
-        desc: "中高生向け",
-        url: "https://learnenglishteens.britishcouncil.org/",
-        category: "For learner"
-    },
-    {
-        title: "Cambridge",
-        desc: "Cambridgeが運営している英語学習者向けのサイトです。",
-        url: "https://www.cambridgeenglish.org/learners/",
-        category: "For learner"
+        category: "News",
     },
     {
         title: "NHK WORLD-JAPAN",
         desc: "NHKが発信しているニュースを英語で。",
         url: "https://www3.nhk.or.jp/nhkworld/",
-        category: "News"
+        category: "News",
+    },
+    {
+        title: "British Council",
+        desc: "中高生向け",
+        url: "https://learnenglishteens.britishcouncil.org/",
+        category: "For learner",
+    },
+    {
+        title: "Cambridge",
+        desc: "Cambridgeが運営している英語学習者向けのサイトです。",
+        url: "https://www.cambridgeenglish.org/learners/",
+        category: "For learner",
     },
 
 
